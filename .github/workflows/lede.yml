@@ -49,11 +49,6 @@ on:
         description: '固件日期'
         default: 'default'
         required: false
-
-# 解决方案
-permissions:
-  contents: write        
-
 env:
   FEEDS_CONF: feeds.conf.default
   DIY_P1_SH: diy.sh
@@ -63,6 +58,10 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
+  
+# 解决方案
+permissions:
+  contents: write        
 
 jobs:
   build:
