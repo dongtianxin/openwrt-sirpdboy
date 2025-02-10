@@ -50,6 +50,10 @@ on:
         default: 'default'
         required: false
 
+# 解决方案
+permissions:
+  contents: write        
+
 env:
   FEEDS_CONF: feeds.conf.default
   DIY_P1_SH: diy.sh
